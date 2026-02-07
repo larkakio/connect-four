@@ -53,6 +53,7 @@ export const metadata: Metadata = {
     'apple-mobile-web-app-status-bar-style': 'black-translucent',
     'fc:miniapp': JSON.stringify(FC_EMBED),
     'fc:frame': JSON.stringify(FC_EMBED),
+    'base:app_id': '6987097073cda529e5cd65e7',
   },
 };
 
