@@ -13,7 +13,7 @@ const orbitron = Orbitron({
   variable: '--font-orbitron',
 });
 
-const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://connect-four-neon.vercel.app';
+const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://connect-four-xps4.vercel.app';
 
 const FC_EMBED = {
   version: '1',

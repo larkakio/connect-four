@@ -56,7 +56,7 @@ npm start
 1. Push your code to GitHub
 2. Import the project in Vercel
 3. Set environment variable:
-   - `NEXT_PUBLIC_APP_URL`: Your production URL (e.g., https://your-app.vercel.app)
+   - `NEXT_PUBLIC_APP_URL`: https://connect-four-xps4.vercel.app
 4. Deploy
 
 ### Configure Farcaster

@@ -37,9 +37,8 @@ Click the button below to deploy to Vercel:
 3. **Environment Variables**
    Add the following in Vercel dashboard:
    ```
-   NEXT_PUBLIC_APP_URL=https://YOUR-APP.vercel.app
+   NEXT_PUBLIC_APP_URL=https://connect-four-xps4.vercel.app
    ```
-   (Replace with your actual Vercel URL after first deployment)
 
 4. **Deploy**
    Click "Deploy" and wait for build to complete
@@ -56,7 +55,7 @@ Click the button below to deploy to Vercel:
 
 2. **Generate Credentials**
    - Visit [Base Build Account Association Tool](https://base.dev/preview?tab=account)
-   - Paste your Vercel URL (e.g., `https://connect-four-neon.vercel.app`)
+   - Paste your Vercel URL: `https://connect-four-xps4.vercel.app`
    - Click "Submit"
    - Click "Verify" button that appears
    - Follow instructions to sign with your Farcaster account
@@ -105,7 +104,7 @@ Click the button below to deploy to Vercel:
 
 ### Test Manifest
 
-1. Visit: `https://YOUR-APP.vercel.app/.well-known/farcaster.json`
+1. Visit: `https://connect-four-xps4.vercel.app/.well-known/farcaster.json`
 2. Verify it returns valid JSON with your credentials
 
 ### Use Preview Tool
