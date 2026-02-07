@@ -14,8 +14,9 @@
     "splashBackgroundColor": "#0a0e1a",
     "homeUrl": "https://connect-four-xps4.vercel.app",
     "webhookUrl": "https://connect-four-xps4.vercel.app/api/webhook",
-    "primaryCategory": "game",
+    "primaryCategory": "games",
     "tags": ["game", "strategy", "connect-four", "cyberpunk", "multiplayer"],
+    "noindex": false,
     "screenshotUrls": [
       "https://connect-four-xps4.vercel.app/hero-image.png"
     ],
