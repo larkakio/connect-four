@@ -1,0 +1,22 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "miniapp": {
+    "version": "1",
+    "name": "Neon Gravity",
+    "subtitle": "Connect Four in Cyberpunk Style",
+    "description": "Strategic Connect Four game with stunning neon visuals and smooth swipe controls. Challenge friends in this futuristic board game experience.",
+    "iconUrl": "/icon.png",
+    "splashImageUrl": "/hero-image.png",
+    "splashBackgroundColor": "#0a0e1a",
+    "homeUrl": "/",
+    "primaryCategory": "game",
+    "tags": ["game", "strategy", "connect-four", "cyberpunk", "multiplayer"],
+    "screenshotUrls": [
+      "/screenshot-1.png"
+    ]
+  }
+}

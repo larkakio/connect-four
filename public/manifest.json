@@ -1,0 +1,18 @@
+{
+  "name": "Connect Four: Neon Gravity",
+  "short_name": "Neon Gravity",
+  "description": "Futuristic Connect Four game with stunning cyberpunk visuals",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0e1a",
+  "theme_color": "#00D4FF",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+/* Win Celebration Animations */
+@keyframes winPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+@keyframes winGlow {
+  0%, 100% {
+    box-shadow: 
+      0 0 20px var(--neon-green),
+      0 0 40px var(--neon-green),
+      0 0 60px var(--neon-green);
+  }
+  50% {
+    box-shadow: 
+      0 0 40px var(--neon-green),
+      0 0 80px var(--neon-green),
+      0 0 120px var(--neon-green);
+  }
+}
+
+@keyframes confettiFall {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+@keyframes particleBurst {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--tx), var(--ty)) scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes neonFlicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes columnHighlight {
+  0%, 100% {
+    background: rgba(0, 212, 255, 0);
+  }
+  50% {
+    background: rgba(0, 212, 255, 0.2);
+  }
+}
+
+@keyframes ghostFade {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+/* Animation Classes */
+.win-pulse {
+  animation: winPulse 1s ease-in-out infinite;
+}
+
+.win-glow {
+  animation: winGlow 1.5s ease-in-out infinite;
+}
+
+.confetti {
+  animation: confettiFall linear forwards;
+  position: absolute;
+  pointer-events: none;
+}
+
+.particle {
+  animation: particleBurst 0.8s ease-out forwards;
+  position: absolute;
+  pointer-events: none;
+}
+
+.slide-up {
+  animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ripple-effect {
+  animation: ripple 0.6s ease-out;
+}
+
+.glitch-effect {
+  animation: glitch 0.3s ease-in-out;
+}
+
+.neon-flicker {
+  animation: neonFlicker 2s linear infinite;
+}
+
+.column-highlight {
+  animation: columnHighlight 0.3s ease-in-out;
+}
+
+.ghost-fade {
+  animation: ghostFade 1.5s ease-in-out infinite;
+}
+
+/* Loading Spinner */
+@keyframes spinnerRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.neon-spinner {
+  border: 3px solid transparent;
+  border-top-color: var(--neon-cyan);
+  border-right-color: var(--neon-cyan);
+  border-radius: 50%;
+  animation: spinnerRotate 0.8s linear infinite;
+}
+
+/* Hover Effects */
+.hover-lift {
+  transition: transform 0.2s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+.hover-glow {
+  transition: box-shadow 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 
+    0 0 20px currentColor,
+    0 0 40px currentColor;
+}
+
+/* Utility Animations */
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+.scale-up {
+  animation: scaleUp 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.bounce-in {
+  animation: bounce 0.8s ease-in-out;
+}
