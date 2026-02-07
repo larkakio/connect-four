@@ -7,6 +7,7 @@ import { GameControls } from '@/components/Controls/GameControls';
 import { SwipeIndicator } from '@/components/Controls/SwipeIndicator';
 import { WinAnimation } from '@/components/Animations/WinAnimation';
 import { NeonText } from '@/components/UI/NeonText';
+import { FarcasterReady } from '@/components/FarcasterReady';
 import { useGameLogic } from '@/hooks/useGameLogic';
 import { useSwipeGestures } from '@/hooks/useSwipeGestures';
 import { useFarcasterSDK } from '@/hooks/useFarcasterSDK';
@@ -69,6 +70,9 @@ export default function Home() {
 
   return (
     <main className="min-h-screen flex flex-col items-center justify-center p-4 relative overflow-hidden">
+      {/* Notify Farcaster that app is ready */}
+      <FarcasterReady />
+      
       {/* Background effects */}
       <div className="fixed inset-0 pointer-events-none">
         <div 
