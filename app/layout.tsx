@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter, Orbitron } from 'next/font/google';
 import './globals.css';
 import '../styles/animations.css';
+import { Providers } from './providers';
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -14,21 +15,6 @@ const orbitron = Orbitron({
 });
 
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://connect-four-xps4.vercel.app';
-
-const FC_EMBED = {
-  version: '1',
-  imageUrl: `${APP_URL}/hero-image.png`,
-  button: {
-    title: 'Play Neon Gravity',
-    action: {
-      type: 'launch_frame',
-      name: 'Connect Four: Neon Gravity',
-      url: APP_URL,
-      splashImageUrl: `${APP_URL}/hero-image.png`,
-      splashBackgroundColor: '#0a0e1a',
-    },
-  },
-};
 
 export const metadata: Metadata = {
   title: 'Connect Four: Neon Gravity',
@@ -51,8 +37,6 @@ export const metadata: Metadata = {
     'mobile-web-app-capable': 'yes',
     'apple-mobile-web-app-capable': 'yes',
     'apple-mobile-web-app-status-bar-style': 'black-translucent',
-    'fc:miniapp': JSON.stringify(FC_EMBED),
-    'fc:frame': JSON.stringify(FC_EMBED),
     'base:app_id': '6987097073cda529e5cd65e7',
   },
 };
@@ -69,7 +53,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/icon.png" />
       </head>
       <body className={inter.className}>
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
